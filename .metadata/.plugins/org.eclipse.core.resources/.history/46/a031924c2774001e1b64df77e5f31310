@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Student form</title>
+</head>
+<body>
+	<form th:action="@{/processStudentForm}" th:object="${student}" method="POST">
+		First Name : <input type="text" th:field="*{firstName}"/> 
+		<br> <br>
+		Last Name : <input type="text" th:field="*{lastName}" />
+		<br> <br>
+		
+		<select th:field="*{country}">
+			<option th:value="Brazil">Brazil</option>
+			<option th:value="France">France</option>
+			<option th:value="India">India</option>
+			<option th:value="UK">UK</option>
+			<option th:value="USA">USA</option>
+			<option th:value="UAE">UAE</option>
+		
+		</select>
+		
+		<input type="submit" value="Submit" />
+	</form>
+</body>
+</html>

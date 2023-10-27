@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Thymleaf Demo</title>
+</head>
+<body>
+	<p>Hello World from Thymleaf and spring boot</p>
+	<br/>
+	
+	<p th:text = "${result}"/>
+</body>
+</html>

@@ -1,0 +1,19 @@
+package com.mathewzvk.springboot.thymleafdemo.controller;
+
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class DemoController {
+
+	@RequestMapping("/showform")
+	public String showForm() {
+		return "helloworld-form";
+	}
+	
+	@RequestMapping("/processform")
+	public String processForm() {
+		return "helloworld";
+	}
+}

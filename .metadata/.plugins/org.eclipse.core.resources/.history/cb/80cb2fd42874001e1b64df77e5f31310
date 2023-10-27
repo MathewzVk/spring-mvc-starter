@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Student form</title>
+</head>
+<body>
+	Student Confirmed : <span th:text="${student.firstName} + ' ' + ${student.lastName}" />
+	<br><br>
+	Country : <span th:text="${student.country}"/>
+	Favorite Language : <span th:text="${student.favLanguage}"/>
+</body>
+</html>
